@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Услуги</title>
+</head>
+
+<body>
+
+        <!-- Шапка -->
+
+        <header>
+            <h1>Наши услуги</h1>
+        </header>
+
+    <!-- Меню навигации  -->
+    <nav>
+        <ul class="menu">
+            <li><a href="start.html">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#prices">Цена</a></li>
+        </ul>
+    </nav>
+
+    <!-- Услуг -->
+
+    <section id="services" class="animated-services">
+        <h2>Наши услуги</h2>
+        <ul class="service-list">
+            <li class="service-item" data-icon="🧹">Общая уборка помещений</li>
+            <li class="service-item" data-icon="🪟">Чистка окон и стекол</li>
+            <li class="service-item" data-icon="🔨">Уборка после ремонта</li>
+            <li class="service-item" data-icon="🧽">Мытье полов и ковров</li>
+            <li class="service-item" data-icon="🛁">Мытье ванной и санузла</li>
+            <li class="service-item" data-icon="🍽">Мытье посуды</li>
+            <li class="service-item" data-icon="🌿">Уборка зеленых насаждений</li>
+            <li class="service-item" data-icon="🏠">Генеральная уборка жилых помещений</li>
+            <li class="service-item" data-icon="🪣">Мытье оконных рам и откосов</li>
+            <li class="service-item" data-icon="📦">Уборка складских помещений</li>
+            <li class="service-item" data-icon="🖼">Очистка поверхностей от пыли и пятен</li>
+        </ul>
+        <div class="text">
+            <p>Мы предоставляем широкий спектр клининговых услуг для ваших потребностей.</p>
+        </div>
+
+    </section>
+
+    <!-- Блок с ценами -->
+
+    <section id="prices" class="prices-section">
+        <h2>Наши цены</h2>
+        <div class="price-list">
+            <div class="price-item">
+                <h3>Общая уборка помещений</h3>
+                <p>от 1000 руб.</p>
+            </div>
+            <div class="price-item">
+                <h3>Чистка окон и стекол</h3>
+                <p>от 500 руб.</p>
+            </div>
+            <div class="price-item">
+                <h3>Уборка после ремонта</h3>
+                <p>от 1500 руб.</p>
+            </div>
+            <div class="price-item">
+                <h3>Мытье полов и ковров</h3>
+                <p>от 800 руб.</p>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Наверх">↑</button>
+
+    <!--Подвал -->
+        <footer>
+            <p class="podval">&copy; Сделано в рамках практики</p>
+        </footer>
+    
+        <script>
+    
+            var mybutton = document.getElementById("myBtn");
+    
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+</body>
+
+</html>
